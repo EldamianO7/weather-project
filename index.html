@@ -7,7 +7,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="styles/shared/general.css" />
     <link rel="stylesheet" href="styles/shared/header.css" />
-    <link rel="stylesheet" href="styles/page/weather.css" />
+    <link rel="stylesheet" href="styles/pages/weather.css" />
 
     <title>Weather App</title>
   </head>
@@ -25,6 +25,7 @@
 
     <div class="main-body">
       <img
+        id="weather-background"
         class="weather-background"
         src="https://images.pexels.com/photos/414659/pexels-photo-414659.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
         alt="clouds background"
@@ -32,12 +33,13 @@
 
       <div class="main-infos">
         <div class="top">
-          <p class="weather-text">Nuageux</p>
-          <p class="temperature-text">Il fait 0°C</p>
+          <p id="weather" class="weather-text">Nuageux</p>
+          <p id="temperature" class="temperature-text">Il fait 0°C</p>
         </div>
 
         <div class="middle">
           <img
+            id="weather-icon"
             class="weather-icon"
             src="https://icon-library.com/images/cloud-png-icon/cloud-png-icon-1.jpg"
             alt="Nuage"
@@ -45,7 +47,7 @@
         </div>
 
         <div class="bottom">
-          <p class="main-infos-footer">Powered by Open Meteo</p>
+          <p class="main-infos-footer">Powered by "Open Meteo".</p>
         </div>
       </div>
     </div>

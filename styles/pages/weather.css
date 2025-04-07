@@ -29,6 +29,7 @@
   justify-content: space-between;
 
   padding: 60px 10px;
+  margin: 0 15px;
 
   border-radius: 10px;
 
@@ -36,8 +37,6 @@
 
   height: 500px;
   width: 400px;
-
-  max-width: 1000px;
 }
 
 /* INFOS TOP */

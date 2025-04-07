@@ -4,6 +4,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 20px;
 
   padding: 0 25px;
 
@@ -36,8 +37,12 @@ header .header-title {
 header .right {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
   gap: 25px;
+
+  flex: 1;
+  max-width: 550px;
+  min-width: 25px;
 }
 
 header input {
@@ -46,4 +51,21 @@ header input {
   font-size: 18px;
 
   border-radius: 100px;
+
+  max-width: 250px;
+  min-width: 50px;
+}
+
+@media (max-width: 425px) {
+  header {
+    padding: 0 5px;
+  }
+
+  header .left {
+    display: none;
+  }
+
+  header .right {
+    gap: 5px;
+  }
 }

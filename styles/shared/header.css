@@ -1,0 +1,49 @@
+header {
+  background-color: rgb(80, 80, 80);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 25px;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  height: 75px;
+}
+
+/* LEFT HEADER SECTION */
+
+header .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+header .header-title {
+  color: white;
+
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* RIGHT HEADER SECTION */
+
+header .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+header input {
+  flex: 1;
+
+  font-size: 18px;
+
+  border-radius: 100px;
+}

@@ -26,17 +26,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 50px;
 
-  padding: 60px 10px;
+  padding: 60px 75px;
   margin: 0 15px;
 
   border-radius: 10px;
 
   box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.3);
 
-  height: 500px;
-  width: 400px;
+  max-height: 500px;
+  max-width: 250px;
 }
 
 /* INFOS TOP */
@@ -52,11 +53,15 @@
 .weather-text {
   color: white;
 
+  text-align: center;
+
   font-size: 32px;
 }
 
 .temperature-text {
   color: white;
+
+  text-align: center;
 
   font-size: 16px;
 }
@@ -64,8 +69,7 @@
 /* INFOS MIDDLE */
 
 .weather-icon {
-  width: 250px;
-  height: 250px;
+  width: 100%;
 
   object-fit: cover;
 }
@@ -74,6 +78,8 @@
 
 .main-infos-footer {
   color: white;
+
+  text-align: center;
 
   font-size: 12px;
 }

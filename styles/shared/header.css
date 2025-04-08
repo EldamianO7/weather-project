@@ -1,17 +1,23 @@
 header {
-  background-color: rgb(80, 80, 80);
+  /* Glassmorphism */
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.125);
 
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
 
+  border-radius: 12px;
+
   padding: 0 25px;
 
   position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
+  top: 15px;
+  right: 15px;
+  left: 15px;
 
   height: 75px;
 }
@@ -46,6 +52,9 @@ header .right {
 }
 
 header input {
+  background-color: rgb(54, 62, 82);
+  color: white;
+
   flex: 1;
 
   font-size: 18px;

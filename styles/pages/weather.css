@@ -12,7 +12,7 @@ body {
   z-index: -1;
 }
 
-.background-container img {
+.background-container video {
   height: 100%;
   width: 100%;
 
@@ -50,8 +50,9 @@ body {
 
   box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.2);
 
-  max-height: 500px;
-  max-width: 250px;
+  width: 90%;
+  max-width: 300px;
+  box-sizing: border-box;
 }
 
 /* INFOS TOP */
@@ -96,4 +97,34 @@ body {
   text-align: center;
 
   font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .main-infos {
+    padding: 50px 65px;
+    gap: 40px;
+  }
+
+  .weather-text {
+    font-size: 26px;
+  }
+
+  .temperature-text {
+    font-size: 14px;
+  }
+
+  .main-infos-footer {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 425px) {
+  .main-infos {
+    padding: 55px 40px;
+    gap: 25px;
+  }
+
+  .weather-icon {
+    max-width: 125px;
+  }
 }

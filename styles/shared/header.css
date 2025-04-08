@@ -65,9 +65,37 @@ header input {
   min-width: 50px;
 }
 
+@media (max-width: 768px) {
+  header .header-title {
+    font-size: 20px;
+  }
+
+  header input {
+    font-size: 16px;
+    max-width: 180px;
+  }
+
+  .main-infos {
+    padding: 40px 50px;
+    gap: 30px;
+  }
+
+  .weather-text {
+    font-size: 24px;
+  }
+
+  .temperature-text {
+    font-size: 14px;
+  }
+
+  .main-infos-footer {
+    font-size: 10px;
+  }
+}
+
 @media (max-width: 425px) {
   header {
-    padding: 0 5px;
+    padding: 0 20px;
   }
 
   header .left {
@@ -75,6 +103,21 @@ header input {
   }
 
   header .right {
-    gap: 5px;
+    justify-content: space-around;
+  }
+
+  header input {
+    padding: 8px 12px;
+    font-size: 14px;
+    max-width: 140px;
+  }
+
+  .main-infos {
+    padding: 30px 20px;
+    gap: 25px;
+  }
+
+  .weather-icon {
+    max-width: 100px;
   }
 }

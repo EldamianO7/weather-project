@@ -48,6 +48,7 @@ function updateInterface(apiData) {
 
   weatherText.textContent = weather.description;
   temperatureText.textContent = temperature;
+  icon.src = "./icons/" + weather.image;
 }
 
 // Event Functions

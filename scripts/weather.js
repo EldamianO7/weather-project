@@ -21,7 +21,7 @@ function requestApi(lat, lon) {
   lat = lat || 0;
   lon = lon || 0;
 
-  const apiURL = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,weather_code&forecast_days=1`;
+  const apiURL = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&models=meteofrance_seamless&current=temperature_2m,weather_code&forecast_days=1`;
 
   fetch(apiURL)
     .then((response) => {

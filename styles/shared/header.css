@@ -15,9 +15,9 @@ header {
   padding: 0 25px;
 
   position: absolute;
-  top: 15px;
-  right: 15px;
-  left: 15px;
+  top: 40px;
+  right: 5%;
+  left: 5%;
 
   height: 75px;
 }
@@ -79,7 +79,7 @@ header input {
   min-width: 50px;
 }
 
-@media (max-width: 275px) {
+@media (max-width: 330px) {
   header {
     padding: 0 20px;
   }
@@ -100,14 +100,5 @@ header input {
 
   header select {
     flex: 1;
-  }
-
-  .main-infos {
-    padding: 30px 20px;
-    gap: 25px;
-  }
-
-  .weather-icon {
-    max-width: 100px;
   }
 }

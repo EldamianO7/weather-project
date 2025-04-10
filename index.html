@@ -22,7 +22,6 @@
       sizes="16x16"
       href="favicons/favicon-16x16.png"
     />
-    <link rel="manifest" href="/site.webmanifest" />
 
     <!-- Styles -->
     <link rel="stylesheet" href="styles/shared/general.css" />
@@ -30,11 +29,45 @@
     <link rel="stylesheet" href="styles/pages/weather.css" />
 
     <!-- Scripts -->
-    <script defer src="scripts/weather.js"></script>
+    <script defer type="module" src="scripts/weather.js"></script>
 
     <title>Weather App</title>
   </head>
   <body>
+    <header>
+      <div class="left">
+        <p class="header-title">Weather App</p>
+      </div>
+
+      <div class="right">
+        <select id="city-dropdown" class="city-dropdown">
+          <option value="48.8566,2.3522">Paris</option>
+          <option value="43.2965,5.3698">Marseille</option>
+          <option value="45.7640,4.8357">Lyon</option>
+          <option value="43.6047,1.4442">Toulouse</option>
+          <option value="43.7102,7.2620">Nice</option>
+          <option value="47.2184,-1.5536">Nantes</option>
+          <option value="43.6108,3.8767">Montpellier</option>
+          <option value="48.5734,7.7521">Strasbourg</option>
+          <option value="44.8378,-0.5792">Bordeaux</option>
+          <option value="50.6292,3.0573">Lille</option>
+        </select>
+
+        <input
+          class="hide"
+          id="latitude-input"
+          type="number"
+          placeholder="Latitude"
+        />
+        <input
+          class="hide"
+          id="longitude-input"
+          type="number"
+          placeholder="Longitude"
+        />
+      </div>
+    </header>
+
     <div class="background-container">
       <video playsinline height="100%" autoplay muted loop>
         <source src="videos/dark-clouds.mp4" type="video/mp4" />
@@ -42,22 +75,13 @@
       </video>
     </div>
 
-    <header>
-      <div class="left">
-        <p class="header-title">Weather App</p>
-      </div>
-
-      <div class="right">
-        <input id="latitude-input" type="number" placeholder="Latitude" />
-        <input id="longitude-input" type="number" placeholder="Longitude" />
-      </div>
-    </header>
-
     <div class="main-body">
       <div class="main-infos">
         <div class="top">
           <p id="weather" class="weather-text">Éclairs</p>
-          <p id="temperature" class="temperature-text">Il fait 11°C</p>
+          <p class="temperature-text">
+            Il fait <span id="temperature">0</span>°C
+          </p>
         </div>
 
         <div class="middle">

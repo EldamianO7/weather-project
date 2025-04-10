@@ -28,6 +28,10 @@ input:focus {
   outline: none;
 }
 
+.hide {
+  display: none !important;
+}
+
 /* Hide spinners on number inputs */
 
 /*Chrome, Safari, Edge, etc.*/

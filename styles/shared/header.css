@@ -51,6 +51,20 @@ header .right {
   min-width: 25px;
 }
 
+header select {
+  background-color: rgb(54, 62, 82);
+  color: white;
+
+  font-size: 18px;
+
+  border-color: rgb(54, 62, 82);
+  border-width: 5px 10px;
+  border-radius: 100px;
+
+  max-width: 250px;
+  min-width: 50px;
+}
+
 header input {
   background-color: rgb(54, 62, 82);
   color: white;
@@ -65,35 +79,7 @@ header input {
   min-width: 50px;
 }
 
-@media (max-width: 768px) {
-  header .header-title {
-    font-size: 20px;
-  }
-
-  header input {
-    font-size: 16px;
-    max-width: 180px;
-  }
-
-  .main-infos {
-    padding: 40px 50px;
-    gap: 30px;
-  }
-
-  .weather-text {
-    font-size: 24px;
-  }
-
-  .temperature-text {
-    font-size: 14px;
-  }
-
-  .main-infos-footer {
-    font-size: 10px;
-  }
-}
-
-@media (max-width: 425px) {
+@media (max-width: 275px) {
   header {
     padding: 0 20px;
   }
@@ -110,6 +96,10 @@ header input {
     padding: 8px 12px;
     font-size: 14px;
     max-width: 140px;
+  }
+
+  header select {
+    flex: 1;
   }
 
   .main-infos {
